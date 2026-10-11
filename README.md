@@ -7,6 +7,7 @@
 - 响应式个人主页：教育背景、求职方向、作品与联系方式。
 - Focus 任务看板：新增、搜索、状态切换、删除及浏览器本地保存。
 - 可打印求职资料及 PDF 下载。
+- 独立摄影作品集页面：访问 `/photo/` 浏览马拉松、自然与城市摄影作品。
 
 展示项目已明确标注为本站演示，不代表商业项目或实习经历。
 
@@ -28,5 +29,6 @@ https://urmrh.github.io/yxm-portfolio/
 - `demo.html` / `demo.css` / `demo.js`：任务看板。
 - `resume.html` / `huang-xiangyun-resume.pdf`：求职资料。
 - `icon.svg`：网站图标。
+- `photo/index.html` / `photo/assets/`：摄影作品集页面与照片素材。
 
 任务仅保存在当前浏览器，不上传到服务器。仓库不包含服务器密码、证书私钥及服务器运维配置。
