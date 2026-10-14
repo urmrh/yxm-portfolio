@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="黄祥云的产品原型练习：应届生求职进度管理与校园活动发现，包含目标用户、关键流程和可点击交互原型。">
+  <meta name="theme-color" content="#153f32">
+  <title>产品原型实践 · 黄祥云</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="prototype.css">
+  <script src="prototype.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳转到主要内容</a>
+<header class="header">
+  <a class="brand" href="index.html" aria-label="黄祥云 首页"><span class="brand-icon">H.</span><span>黄祥云<span class="brand-en">XIANGYUN HUANG</span></span></a>
+  <nav aria-label="原型案例导航"><a href="#zhi-xiang">职向</a><a href="#shi-guang">拾光</a><a href="index.html#work">全部作品</a></nav>
+  <a class="nav-contact" href="index.html#work">返回作品集 <span>↗</span></a>
+</header>
+<main id="main">
+  <section class="prototype-intro wrap">
+    <p class="eyebrow">03 / PRODUCT THINKING & PROTOTYPING</p>
+    <div class="intro-layout">
+      <h1>先把问题说清楚，<br><em>再设计下一步。</em></h1>
+      <p>从校园生活里的具体场景出发，梳理用户目标、信息结构与关键状态，再用可点击原型表达方案。下面是两个独立概念练习。</p>
+    </div>
+    <div class="skill-strip"><span>用户场景</span><i>→</i><span>核心流程</span><i>→</i><span>交互状态</span><i>→</i><span>验证计划</span></div>
+  </section>
+
+  <article class="case-section wrap" id="zhi-xiang">
+    <div class="case-heading">
+      <div><p class="eyebrow">CASE 01 / JOB SEARCH ORGANIZER</p><h2>职向 · 求职进度助手</h2></div>
+      <span class="case-kind">应届生求职 · 桌面端概念原型</span>
+    </div>
+    <p class="case-lead">投递、笔试、面试同时推进时，进度容易散落在聊天记录和备忘录里。职向把岗位阶段与下一步行动放在同一张看板上，帮助用户快速判断“现在到哪了、接下来做什么”。</p>
+    <div class="case-layout">
+      <div class="case-notes">
+        <section class="note-block"><h3>目标用户</h3><p>正在同时跟进多个实习或校招岗位、需要整理投递进展的在校生与应届生。</p></section>
+        <section class="note-block"><h3>设计目标</h3><p>让每个岗位的当前阶段一眼可见，并把“下一步行动”作为推进求职流程的提示。</p></section>
+        <section class="note-block"><h3>核心流程</h3><ol class="flow-list"><li>记录关注岗位</li><li>更新投递阶段</li><li>查看下一步行动</li><li>复盘当前进度</li></ol></section>
+        <section class="note-block decision"><h3>方案取舍</h3><p>用阶段看板代替长表格；卡片只保留公司、岗位和下一步，先降低持续维护的成本。</p></section>
+      </div>
+      <section class="prototype-panel" aria-labelledby="job-demo-title">
+        <div class="panel-caption"><div><span class="live-dot"></span><div><h3 id="job-demo-title">可点击原型</h3><p>推进岗位阶段，或添加一条演示记录</p></div></div><span>DEMO 01</span></div>
+        <div class="job-demo">
+          <div class="demo-frame-head">
+            <div class="demo-brand"><span class="app-mark">职</span><div><b>职向</b><small>求职管理空间</small></div></div>
+            <button id="job-reset" class="text-control" type="button">重置演示 ↺</button>
+          </div>
+          <div class="job-app-layout">
+            <aside class="job-app-side" aria-label="演示导航">
+              <div class="profile-chip"><span>Y</span><p>祥云的求职空间<small>2026 届 · 应届生</small></p></div>
+              <div class="job-side-link active"><b>▦</b>岗位看板</div>
+              <div class="job-side-link"><b>⌁</b>阶段复盘</div>
+              <p class="side-caption">虚构岗位 · 演示数据</p>
+            </aside>
+            <div class="job-app-main">
+              <div class="job-title-row"><div><p>我的工作台</p><h4>岗位进度</h4></div><span class="date-chip">本周安排</span></div>
+              <div class="job-stats" id="job-stats" aria-label="岗位统计"></div>
+              <div class="job-actions"><div id="job-filters" class="job-filters" aria-label="按阶段筛选"></div><button id="add-job" class="add-job" type="button">＋ 添加演示岗位</button></div>
+              <p id="job-status" class="demo-status" role="status" aria-live="polite"></p>
+              <div id="job-board" class="job-board" aria-label="岗位阶段看板"></div>
+            </div>
+          </div>
+        </div>
+        <p class="demo-footnote">所有岗位和公司均为虚构示例；本原型不会保存用户输入或连接业务后台。</p>
+      </section>
+    </div>
+    <div class="validation-row"><div><span>待验证假设</span><p>阶段看板比自由备注更容易让求职者发现遗漏的跟进任务。</p></div><div><span>验证计划</span><p>邀请目标用户完成“找到一项待办并推进岗位阶段”任务，观察理解成本和漏项。</p></div></div>
+  </article>
+
+  <article class="case-section wrap" id="shi-guang">
+    <div class="case-heading">
+      <div><p class="eyebrow">CASE 02 / CAMPUS EVENT DISCOVERY</p><h2>拾光 · 校园活动发现</h2></div>
+      <span class="case-kind">校园活动 · 移动端概念原型</span>
+    </div>
+    <p class="case-lead">活动通知分散在不同群聊和公告里，学生常常错过感兴趣的活动，或临报名时才发现时间地点不清楚。拾光把分类、活动信息和报名状态放到一条连续的浏览路径中。</p>
+    <div class="case-layout campus-layout">
+      <div class="case-notes">
+        <section class="note-block"><h3>目标用户</h3><p>希望快速发现讲座、校园活动和成长机会，并需要确认时间、地点与报名结果的学生。</p></section>
+        <section class="note-block"><h3>设计目标</h3><p>降低浏览活动的筛选成本，让报名结果有明确反馈，并能回到“我的报名”中查看。</p></section>
+        <section class="note-block"><h3>核心流程</h3><ol class="flow-list"><li>按兴趣筛选</li><li>查看时间地点</li><li>完成活动报名</li><li>查看我的报名</li></ol></section>
+        <section class="note-block decision"><h3>方案取舍</h3><p>活动卡片优先呈现日期、地点和报名状态；分类筛选与报名入口放在列表页，减少来回跳转。</p></section>
+      </div>
+      <section class="prototype-panel campus-panel" aria-labelledby="campus-demo-title">
+        <div class="panel-caption"><div><span class="live-dot"></span><div><h3 id="campus-demo-title">可点击原型</h3><p>切换分类、报名活动，再查看我的报名</p></div></div><span>DEMO 02</span></div>
+        <div class="campus-demo">
+          <div class="phone-shell">
+            <div class="phone-statusbar"><span>9:41</span><span>● ● ●</span></div>
+            <div class="phone-screen">
+              <div class="phone-heading"><div><small>新乡工程学院</small><h4>发现校园好活动</h4></div><button id="my-bookings" type="button" class="bookings-toggle">我的报名 <b id="booking-count">0</b></button></div>
+              <div id="activity-filters" class="activity-filters" aria-label="活动分类"></div>
+              <p id="activity-status" class="activity-status" role="status" aria-live="polite"></p>
+              <div id="activity-list" class="activity-list"></div>
+              <div class="phone-nav"><span class="selected"><i>⌂</i>发现</span><span><i>♡</i>我的</span><span><i>◉</i>消息</span></div>
+            </div>
+          </div>
+          <p class="phone-hint">尝试筛选分类、报名活动，或打开“我的报名”。</p>
+        </div>
+        <p class="demo-footnote">活动为虚构示例；报名状态仅用于本次交互演示，刷新页面后恢复。</p>
+      </section>
+    </div>
+    <div class="validation-row"><div><span>待验证假设</span><p>把日期、地点和报名状态前置，能帮助学生更快判断是否参加。</p></div><div><span>验证计划</span><p>观察学生从活动列表找到目标活动并完成报名的过程，记录卡片信息是否足够。</p></div></div>
+  </article>
+
+  <section class="method-note wrap">
+    <p class="eyebrow">DESIGN NOTES</p>
+    <h2>从问题到交互，<br>每一步都可以继续验证。</h2>
+    <div class="method-grid"><div><b>01</b><h3>先明确场景</h3><p>从谁在什么情况下遇到什么问题开始，而不是直接画页面。</p></div><div><b>02</b><h3>表达关键流程</h3><p>用页面、状态和操作反馈说明方案如何被使用。</p></div><div><b>03</b><h3>留下验证问题</h3><p>把设计假设和验证计划分开写，不把设想当作用户研究结论。</p></div></div>
+    <p class="prototype-disclaimer">说明：以上是个人自主练习与代码实现的可点击原型，不代表真实商业项目、已上线产品或实际用户调研。界面与交互用 HTML、CSS、JavaScript 呈现。</p>
+  </section>
+</main>
+<footer class="footer wrap"><a class="brand" href="index.html"><span class="brand-icon">H.</span><span>黄祥云</span></a><p>© <span id="year">2026</span> 黄祥云 · 产品原型实践</p><a href="#main">回到顶部 ↑</a></footer>
+</body>
+</html>
