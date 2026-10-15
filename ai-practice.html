@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="黄祥云围绕飞书多维表格个人任务规划、状态管理与自动化订阅，整理 AI 辅助工作流方案。案例为个人实践与模拟场景，不涉及企业客户或商业交付。">
+  <meta name="theme-color" content="#153f32">
+  <meta property="og:title" content="AI 应用与解决方案实践 · 黄祥云">
+  <meta property="og:description" content="从真实个人任务管理出发，拆解状态管理、自动化订阅与 AI 辅助流程。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yxm.me/ai-practice.html">
+  <link rel="canonical" href="https://yxm.me/ai-practice.html">
+  <title>AI 应用与解决方案实践 · 黄祥云</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ai-practice.css">
+  <script src="ai-practice.js" defer></script>
+</head>
+<body class="ai-practice-page">
+<a class="skip" href="#main">跳转到主要内容</a>
+<header class="header">
+  <a class="brand" href="index.html" aria-label="黄祥云 首页"><span class="brand-icon">H.</span><span>黄祥云<span class="brand-en">XIANGYUN HUANG</span></span></a>
+  <nav aria-label="实践案例导航"><a href="#basis">实践基础</a><a href="#workflow">工作流</a><a href="#ai-solution">AI 方案</a><a href="#demo">交互示意</a></nav>
+  <a class="nav-contact" href="index.html#work">返回作品集 <span>↗</span></a>
+</header>
+<main id="main">
+  <section class="practice-hero wrap">
+    <div class="practice-hero-copy">
+      <p class="eyebrow">04 / FDE AI APPLICATION &amp; SOLUTION PRACTICE</p>
+      <p class="practice-kicker"><span></span> 个人实践 · FDE 方向方案练习</p>
+      <h1>从个人任务管理，<br><em>练习 AI 工作流设计。</em></h1>
+      <p class="practice-lead">以个人的 AI 辅助开发与飞书待办管理实践为基础，探索 AI 如何协助整理信息、提示缺失项，并把思路整理成面向飞书 FDE 实习岗位的方案练习。</p>
+      <div class="practice-hero-actions"><a class="button primary" href="#basis">查看实践依据 <span>↓</span></a><a class="button secondary" href="#demo">体验本地示意 <span>↗</span></a></div>
+    </div>
+    <aside class="practice-boundary" aria-label="案例边界">
+      <span class="boundary-mark">✳</span>
+      <p class="eyebrow">SCOPE &amp; STATUS</p>
+      <h2>个人工作流，<br>不是企业交付案例。</h2>
+      <p>个人任务表和订阅/状态管理实践提供场景依据；AI 助手与提醒规则在本页作为方案练习展示。</p>
+      <ul><li>不包含企业客户或商业成果</li><li>不公开原表中的个人任务与备注</li><li>未连接真实模型、飞书后台或通知服务</li></ul>
+    </aside>
+  </section>
+
+  <div class="practice-ribbon"><div class="wrap"><span>PERSONAL WORKFLOW</span><i>✳</i><span>STATUS DESIGN</span><i>✳</i><span>AI-ASSISTED OPERATIONS</span><i>✳</i><span>HUMAN CONFIRMATION</span></div></div>
+
+  <section class="section wrap practice-basis" id="basis">
+    <div class="practice-section-heading"><div><p class="eyebrow">01 / VERIFIED PRACTICE</p><h2>从真实的个人任务表开始。</h2></div><p>先看清楚现有信息怎样被记录，<br>再讨论 AI 和自动化该接在哪里。</p></div>
+    <div class="basis-grid">
+      <article class="basis-card basis-card-main">
+        <div class="card-topline"><span class="practice-label"><i></i> 实践依据</span><span>飞书多维表格 · 个人规划</span></div>
+        <h3>用字段管理任务与状态</h3>
+        <p>分享视图中可见任务名称、状态、优先级、截止日期、完成时间、是否逾期和备注等字段；状态包含未开始、进行中、已完成。我使用 ChatGPT、Claude 辅助项目开发与问题分析，并用飞书 AI 多维表格管理个人待办。</p>
+        <div class="field-list" aria-label="分享视图中可见的字段">
+          <span>任务名称</span><span>状态</span><span>优先级</span><span>截止日期</span><span>完成时间</span><span>是否逾期</span><span>备注</span>
+        </div>
+        <p class="basis-caption">字段来自用户提供的分享页当前可见视图。页面不嵌入原表，也不复刻个人任务行。</p>
+      </article>
+      <article class="basis-card basis-card-note">
+        <span class="basis-icon">↻</span>
+        <p class="eyebrow">PERSONAL PRACTICE</p>
+        <h3>自动化订阅与状态管理</h3>
+        <p>我配置过按任务状态订阅每日数据的个人自动化流程。分享视图没有展示自动化配置，因此本页只记录这一实践，不展示运行日志或量化效果；页面本身也不会连接该流程。</p>
+        <div class="privacy-note"><b>隐私处理</b><span>原表中的具体事项、备注与订阅对象不公开。</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="workflow-section" id="workflow">
+    <div class="wrap section">
+      <div class="practice-section-heading"><div><p class="eyebrow">02 / WORKFLOW MAPPING</p><h2>把信息、状态和提醒连起来。</h2></div><p>现有实践提供数据结构；<br>订阅规则与 AI 辅助流程作为方案练习。</p></div>
+      <div class="workflow-grid">
+        <article class="workflow-step"><span class="step-number">01</span><span class="step-kind">已有实践</span><h3>收集个人任务</h3><p>任务以结构化字段进入多维表格，保留状态、优先级和时间信息。</p><span class="step-arrow" aria-hidden="true">→</span></article>
+        <article class="workflow-step"><span class="step-number">02</span><span class="step-kind">已有实践</span><h3>维护任务状态</h3><p>通过未开始、进行中、已完成等状态，回看任务推进情况。</p><span class="step-arrow" aria-hidden="true">→</span></article>
+        <article class="workflow-step"><span class="step-number">03</span><span class="step-kind">已有实践</span><h3>按状态订阅每日数据</h3><p>个人待办流程已配置按任务状态订阅每日数据的自动化；本页不连接真实流程，也不展示未核实的运行效果。</p><span class="step-arrow" aria-hidden="true">→</span></article>
+        <article class="workflow-step workflow-step-ai"><span class="step-number">04</span><span class="step-kind">方案练习</span><h3>由 AI 协助整理</h3><p>将自然语言事项整理成待确认的字段建议、缺失信息问题和下一步行动。</p><span class="step-arrow" aria-hidden="true">✳</span></article>
+      </div>
+      <p class="workflow-caption"><span>说明</span> 第 1–3 步来自个人实践背景；第 4 步是面向 FDE 岗位的 AI 应用方案练习。</p>
+    </div>
+  </section>
+
+  <section class="section wrap solution-section" id="ai-solution">
+    <div class="practice-section-heading"><div><p class="eyebrow">03 / AI SOLUTION DESIGN</p><h2>AI 先给建议，<br>人确认后再改变状态。</h2></div><p>把自动化放在明确的规则之后，<br>把 AI 放在用户可检查的位置。</p></div>
+    <div class="solution-layout">
+      <div class="solution-flow" aria-label="模拟方案流程">
+        <div class="solution-node"><span>输入</span><b>自然语言任务</b><small>由本人提供</small></div><span class="flow-connector" aria-hidden="true">→</span>
+        <div class="solution-node solution-node-ai"><span>AI 建议</span><b>字段与下一步</b><small>待确认草稿</small></div><span class="flow-connector" aria-hidden="true">→</span>
+        <div class="solution-node"><span>人工确认</span><b>校对时间与状态</b><small>再决定是否记录</small></div><span class="flow-connector" aria-hidden="true">→</span>
+        <div class="solution-node"><span>工作流</span><b>状态 / 订阅规则</b><small>按确认后的信息流转</small></div>
+      </div>
+      <div class="solution-notes">
+        <article><span>01</span><div><h3>先把任务整理成结构</h3><p>建议字段包括任务描述、优先级、截止日期和下一步行动；日期缺失或表达不确定时，先追问而不是猜测。</p></div></article>
+        <article><span>02</span><div><h3>提醒由订阅规则决定</h3><p>方案示例：只对用户主动订阅的任务节点提醒，并在任务完成或日期变化后重新核对状态。</p></div></article>
+        <article><span>03</span><div><h3>保留人工确认与退出方式</h3><p>AI 不自动改写任务状态；用户可以检查建议、调整提醒范围或关闭订阅，减少误报和重复打扰。</p></div></article>
+      </div>
+    </div>
+    <div class="solution-doc"><div><p class="eyebrow">SOLUTION NOTE</p><h3>方案说明会覆盖什么</h3></div><div class="doc-topics"><span>使用场景</span><span>字段定义</span><span>状态流转</span><span>订阅触发</span><span>异常处理</span><span>验收指标</span></div><p>以上是方案设计检查项，不代表已完成企业部署。若进入真实团队场景，还需与使用者核对权限、数据来源、提醒渠道和验收方式。</p></div>
+  </section>
+
+  <section class="demo-section" id="demo">
+    <div class="wrap section">
+      <div class="practice-section-heading"><div><p class="eyebrow">04 / LOCAL INTERACTION</p><h2>看一遍模拟流程。</h2></div><p>静态页面中的本地交互示意。<br>不会读取或写入飞书数据。</p></div>
+      <div class="demo-shell">
+        <div class="demo-panel">
+          <div class="demo-panel-head"><div><span class="demo-status-dot"></span><div><b>个人任务工作台 · 演示</b><small>虚构事项 / 本地状态</small></div></div><span class="demo-mode">SIMULATION</span></div>
+          <div class="demo-task-list">
+            <div class="demo-task demo-task-highlight"><span class="task-check" aria-hidden="true">○</span><div><small>待开始 · 优先级待确认</small><b>整理一份材料清单</b><span>截止日期：待确认</span></div><span class="task-tag">待核对</span></div>
+            <div class="demo-task"><span class="task-check task-check-done" aria-hidden="true">✓</span><div><small>已完成</small><b>复核本周安排</b><span>演示数据，不对应真实记录</span></div><span class="task-tag task-tag-done">完成</span></div>
+          </div>
+          <div class="demo-subscription"><div><span class="subscribe-icon">⌁</span><div><b>截止节点订阅</b><small id="subscription-status">尚未开启 · 仅切换本页示意状态</small></div></div><button id="subscription-toggle" type="button" aria-pressed="false">开启示意</button></div>
+          <div class="demo-assistant">
+            <div class="assistant-avatar">AI</div><div class="assistant-copy"><span>固定样例 · 非真实模型输出</span><p>可先核对所需材料，再补充确认后的截止日期。日期未确认前，不创建提醒。</p></div>
+          </div>
+        </div>
+        <aside class="demo-controls">
+          <p class="eyebrow">TRY THE FLOW</p>
+          <h3>从一个待办，<br>走到可确认的建议。</h3>
+          <p>点按按钮显示预设的 AI 辅助建议，再切换订阅状态。这里没有模型调用、后台连接或真实通知。</p>
+          <button id="show-suggestion" class="button primary" type="button" aria-expanded="false" aria-controls="suggestion-result">查看预设建议 <span>↗</span></button>
+          <p id="demo-announcement" class="demo-announcement" role="status" aria-live="polite">本地交互，不会保存到飞书。</p>
+        </aside>
+      </div>
+      <div id="suggestion-result" class="suggestion-result" hidden>
+        <div><span class="suggestion-check">✓</span><div><p class="eyebrow">SAMPLE SUGGESTION</p><h3>先核对信息，再创建订阅。</h3></div></div>
+        <dl><div><dt>建议下一步</dt><dd>列出所需材料</dd></div><div><dt>需要补充</dt><dd>确认准确截止日期</dd></div><div><dt>订阅条件</dt><dd>日期确认后再设置提醒</dd></div></dl>
+        <p>此结果为预先写好的交互样例，用来展示人工确认节点，不是模型生成结果。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap validation-section">
+    <div class="practice-section-heading"><div><p class="eyebrow">05 / HOW I WOULD VALIDATE</p><h2>把效果留给真实使用验证。</h2></div><p>目前没有企业试点或量化结果；<br>后续会先验证流程是否真的省心。</p></div>
+    <div class="validation-grid"><article><span>01</span><h3>状态是否清楚</h3><p>使用者能否准确判断当前状态和下一步行动？</p></article><article><span>02</span><h3>提醒是否有用</h3><p>订阅是否减少漏看，同时避免重复或无关提醒？</p></article><article><span>03</span><h3>建议是否可控</h3><p>字段建议是否容易校对，错误能否在写入前发现？</p></article></div>
+    <p class="final-disclaimer">案例边界：真实基础包括个人任务规划、ChatGPT / Claude 辅助项目开发与问题分析，以及按任务状态订阅每日数据的个人自动化流程；本页 AI 建议和规则交互属于模拟方案。没有企业客户、商业成果、部署效果或模型效果数据。</p>
+  </section>
+</main>
+<footer class="footer wrap"><a class="brand" href="index.html"><span class="brand-icon">H.</span><span>黄祥云</span></a><p>© <span id="year">2026</span> 黄祥云 · AI 应用与解决方案实践</p><a href="#main">回到顶部 ↑</a></footer>
+</body>
+</html>
